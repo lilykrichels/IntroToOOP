@@ -42,9 +42,6 @@ namespace IntroToOOP
             set { this.isFixed = value; }
         }
 
-        
-        
-
         public Cat()
         {
 
