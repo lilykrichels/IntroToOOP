@@ -23,6 +23,17 @@ namespace IntroToOOP
             Console.WriteLine(cat1.Name);
             Console.WriteLine(cat2.Name);
             Console.WriteLine((cat1.FurColor + cat1.Name));
+
+            //calls the eats method 
+            cat2.Eat();
+            cat2.Run();
+            cat2.Eat();
+            cat2.Talk();
+            cat2.Sleep();
+            cat1.Talk();
+            cat1.FurColor = "tabby";
+            Console.WriteLine(cat1.FurColor
+                );
             
         }
     }
