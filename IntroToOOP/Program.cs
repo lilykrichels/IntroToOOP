@@ -36,10 +36,18 @@ namespace IntroToOOP
             //cat1.IsFixed = true;
             //cat1.Alter();
 
-            Dog monty = new Dog();
+            //Dog monty = new Dog();
 
-            monty.Run();
-            monty.Cuddle("Larry"); 
+            //monty.Run();
+            //monty.Cuddle("Larry"); 
+
+            Superhero goodGuy = new IntroToOOP.Superhero("Super Good Guy");
+            goodGuy.FightEvil();
+            goodGuy.FightEvil();
+            goodGuy.FightEvil();
+            goodGuy.FightEvil();
+            goodGuy.NextLevel();
+            goodGuy.Sleep();
         }
     }
 }

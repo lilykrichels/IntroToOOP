@@ -58,6 +58,37 @@ namespace IntroToOOP
 
         //METHODS
 
+        public void FightEvil()
+        {
+            if (this.currentPower < 2)
+            {
+                Console.WriteLine("I am too weak to fight, I need to recharge.");
+            }
+            else
+            {
+                this.numberOfBattles += 1;
+                this.currentPower -= 2;
+                Console.WriteLine("That was tough but I survived and saved the city \n My current power is {0}.", this.currentPower);
+            }
+        }
 
+        public void Sleep()
+        {
+            Console.WriteLine("I feel better than ever! My powers are fully recharged.");
+            this.currentPower = maxPower;
+        }
+
+        public void NextLevel()
+        {
+            if (numberOfBattles % 3 == 0)
+            {
+                maxPower += 10;
+                this.currentPower = this.maxPower;
+            }
+            else
+            {
+                Console.WriteLine("You don't have enough battles under your belt.");
+            }
+        }
     }
 }
